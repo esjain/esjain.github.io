@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+  background-image: url(Heart.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+   background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>Shaily Jain</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h5> July 31, 2018</h5>
+      <p>This picture was taken in Iceland in Jokulsarlon when we were exploreing glecier's but we couldn't stand on one glacier.</p>
+      <img src="IMG_0254.JPG"  height="480px" width="900px" alt="">
+      
+      
+      
+    </div>
+    <div class="card">
+      <h5> August 1, 2018</h5>
+      <p> This is mommy in Sveitarfelagio Hornafjorour when we were on a hike and thought to take some pictures on the way.</p>
+      <img src="IMG_0311.JPG" height="480px" width="900px" alt="">
+      
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+        <h2>About Manoj Jain</h2>
+        <p>Manoj jain is the dad of two children and the husband of Shaily Jain, he is funny and works a lot at Westchester,Chubb.</p>
+        <img src="IMG_0126.JPG" height="200px" alt="">
+      </div>
+      <div class="card">
+        <h2>About Neil Jain</h2>
+        <p>Neil Jain is the son of Manoj Jain and Shaily Jain, he is crazy, funny and always gets into trouble. He also goes ot Valley View School and likes to code and loves to play Fortnite.</p>
+        <img src="IMG_0157.JPG" height="200px" alt="">
+      </div>
+      <div class="card">
+        <h2>About Nikita Jain</h2>
+        <p>Nikita Jain is the daughter of Manoj Jain and Shaily Jain, She is a smart and obedient girl and goes to Bayberry School.She loves to sing and dance and loves to play Roblox.</p>
+        <img src="IMG_0146.JPG" height="200px" alt="">
+      </div>
+  </div>
+</div>
+
+
+</body>
+</html>
